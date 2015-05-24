@@ -8,19 +8,19 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class LoginAdminActivity extends ActionBarActivity {
+public class SignUpAdminActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_admin);
+        setContentView(R.layout.activity_sign_up_admin);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login_admin, menu);
+        getMenuInflater().inflate(R.menu.menu_sign_up_admin, menu);
         return true;
     }
 
@@ -38,10 +38,9 @@ public class LoginAdminActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void SignUp (View view){
-        Intent intent = new Intent(this, SignUpAdminActivity.class);
+    public void Login (View view) {
+        Intent intent = new Intent(this, LoginAdminActivity.class);
         startActivity(intent);
+        }
 
     }
-}
